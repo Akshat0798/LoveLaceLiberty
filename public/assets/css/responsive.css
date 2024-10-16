@@ -1,0 +1,62 @@
+@media (max-width:992px){
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0px;
+        transition: transform 0.3s; /* Smooth transition */
+        transform: translateX(-100%); /* Start hidden off-screen */
+    }
+    
+    .sidebar.smSide {
+        transform: translateX(0); /* Move to visible position */
+        left: -150;
+        z-index: 22;
+    }
+    .dashboard {
+        height: auto;
+    }
+    body.dashboardBg {
+        background-color: #1d162d;
+        overflow: visible;
+    }
+    .main{
+        width: 100%;
+    }
+}
+@media (max-width:767px){
+    .theme-btn {
+        height: auto;
+        width: fit-content;
+        line-height: normal;
+       }
+    .smCustom {
+        max-width: 117px !important;
+        width: 117px !important;
+        overflow: auto !important;
+    }
+    label, th {
+        font-size: 13px !important;
+    }
+    .pageTitle {
+        font-size: 17px;
+    }
+    .themeInput {
+        margin-bottom: 0px;
+    }
+    .wrap {
+        max-width: 100%;
+        margin: 0px auto;
+    }
+    .avatar {
+        width: 2rem;
+        height: 2rem;
+    }
+    .message {
+        max-width: 99%;
+        width: 99% !important;
+    }
+}
+@media (max-width:557px){
+  
+}
